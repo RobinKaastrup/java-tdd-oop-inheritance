@@ -31,7 +31,7 @@ public class LibraryTest {
     @Test
     public void checkInLiteratureTest() {
         Assertions.assertEquals("item is not part of the library's collection", library.checkInLiterature("Assassins Apprentice"));
-        Assertions.assertEquals("item has been checked out", library.checkInLiterature("The Way of Kings"));
+        Assertions.assertEquals("item is not currently on loan", library.checkInLiterature("The Way of Kings"));
 
     }
 }
